@@ -1,3 +1,58 @@
 body {
-    color: black;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.back-container {
+    width: 600px;
+    height: 600px;
+    background-color: #DBDFEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+
+
+
+}
+
+.btn-container-1 {
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+
+}
+
+.btn-container-2 {
+    margin-bottom: 20px;
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+
+}
+
+
+
+.answer-btn {
+    width: 250px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: #8294C4;
+
+}
+
+.answer-btn:hover {
+    opacity: 0.6;
 }
