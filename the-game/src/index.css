@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&display=swap');
+
 body {
     display: flex;
     justify-content: center;
@@ -50,6 +52,8 @@ body {
     border-radius: 5px;
     border: none;
     background-color: #8294C4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
 
 }
 

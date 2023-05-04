@@ -18,19 +18,19 @@ const AnswerButton = () => {
             <div className="back-container">
                 <div className="btn-container-1">
                     <button style={{ backgroundColor: Palette[0].code }} onClick={clickMe} className="answer-btn">
-                        Button
+                        Red
                     </button>
-                    <button className="answer-btn">
-                        Button
+                    <button style={{ backgroundColor: Palette[1].code }} className="answer-btn">
+                        Yellow
                     </button>
 
                 </div>
                 <div className="btn-container-2">
-                    <button className="answer-btn">
-                        Button
+                    <button style={{ backgroundColor: Palette[2].code }} className="answer-btn">
+                        Green
                     </button>
-                    <button className="answer-btn">
-                        Button
+                    <button style={{ backgroundColor: Palette[3].code }} className="answer-btn">
+                        Blue
                     </button>
 
                 </div>
