@@ -5,6 +5,12 @@
       "name": "test",
       "email": "test@gmail.com",
       "password": "12346"
+    },
+    {
+      "username": "Liubov",
+      "email": "Alleriasmi@gmail.com",
+      "password": "654edswf",
+      "id": 2
     }
   ],
   "comments": [

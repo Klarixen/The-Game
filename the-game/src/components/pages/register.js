@@ -11,7 +11,8 @@ const checkEmail = (users) => {
     if (user) return user;
 };
 
-const handleSubmit = async () => {
+const handleSubmit = async (e) => {
+    e.preventDefault();
     const user = await axios
     .get("/users")
     .then((res) => checkEmail(res.data, email));
