@@ -3,7 +3,16 @@ body {
 }
 
 .start-btn {
-
+    color:#e8eaf4;
+    background-color: #4c38e2;
+    width: 90px;
+    height: 60px;
+    margin: 15px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
+    -webkit-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
+    -moz-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
 
 }
 
@@ -47,13 +56,18 @@ input::placeholder {
     font-size:medium;
 }
 .reg-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color:#f7e5eb;
     background-color: #cd6587;
-    width: 70px;
-    height: 45px;
+    width: 40%;
+    height: 50px;
     margin: 15px;
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 600;
     box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
     -webkit-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
     -moz-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
