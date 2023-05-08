@@ -1,4 +1,6 @@
 import Palette from "./Palette";
+import Words from "./Words";
+
 const AnswerButton = () => {
     const clickMe = () => {
         alert("CORRECT");
@@ -11,11 +13,10 @@ const AnswerButton = () => {
     }
 
 
-
-
     return (
         <>
             <div className="back-container">
+
                 <div className="btn-container-1">
                     <button style={{ backgroundColor: Palette[0].code }} onClick={clickMe} className="answer-btn">
                         Red
