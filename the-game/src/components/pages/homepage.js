@@ -4,11 +4,11 @@ const Homepage = () => {
 
         <div>
             <div className="container">
-            <h1>The Game</h1>
+            <h1>The Game hello</h1>
             <h4>Only 1 in 5 people can pass this brainteaser that mismatches the written name of a color and its actual color, can you?</h4>
             </div>  
 
-            <Startbtn>Start!</Startbtn>
+            <Startbtn start={}>Start!</Startbtn>
             
 
 
