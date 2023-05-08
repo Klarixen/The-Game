@@ -48,6 +48,8 @@ setPassword("");
     <div className="container">
                 
     <form className="form-container">
+    <h1 className="login-heading">Color Quiz</h1>
+        <h2 className="login-heading">Login here!</h2>
         
         <label>
         <input type="text" placeholder="Email"

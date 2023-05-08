@@ -3,5 +3,65 @@ body {
 }
 
 .start-btn {
-    
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border: solid #cd6587;
+    width: 50%;
+    border-radius: 30px;
+    background-color: #c13e69;
+    box-shadow: 1px -10px 84px 29px rgba(205,101,135,0.67);
+    -webkit-box-shadow: 1px -10px 84px 29px rgba(205,101,135,0.67);
+    -moz-box-shadow: 1px -10px 84px 29px rgba(205,101,135,0.67);;
+
+}
+.login-heading {
+    color:#f7e5eb;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+input {
+background-color: #ecc7d3;
+height: 45px;
+width: auto;
+margin: 10px;
+border-radius: 10px;
+
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size:medium;
+}
+.reg-btn {
+    color:#f7e5eb;
+    background-color: #cd6587;
+    width: 70px;
+    height: 45px;
+    margin: 15px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
+    -webkit-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
+    -moz-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
+
+}
+
+.reg-btn:hover {
+    box-shadow: none;
+    background-color: #cc859c;
+    cursor: pointer;
 }
