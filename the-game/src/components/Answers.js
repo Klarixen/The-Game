@@ -3,8 +3,10 @@ import { useState } from "react";
 const Answers = () => {
     const [colorWords, setColorWords] = useState(0);
     const optionClicked = (isCorrect) => {
-        console.log(isCorrect);
+        if (isCorrect);
+        setColorWords(colorWords + 1);
     }
+
 
 
     const questions = [
