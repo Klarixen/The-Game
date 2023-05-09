@@ -13,29 +13,97 @@ const Answers = () => {
         {
             text: <h3 className="no1">YELLOW</h3>,
             options: [
-                { id: 0, text: <p className="q1">GREEN</p>, isCorrect: false },
-                { id: 1, text: <p className="q2">YELLOW</p>, isCorrect: false },
-                { id: 2, text: <p className="q3">RED</p>, isCorrect: true },
-                { id: 3, text: <p className="q4">BLUE</p>, isCorrect: false },
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: true },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
             ],
         },
         {
             text: <h3 className="no2">RED</h3>,
             options: [
-                { id: 0, text: <p className="q1">GREEN</p>, isCorrect: false },
-                { id: 1, text: <p className="q2">YELLOW</p>, isCorrect: true },
-                { id: 2, text: <p className="q3">RED</p>, isCorrect: false },
-                { id: 3, text: <p className="q4">BLUE</p>, isCorrect: false },
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: true },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
             ],
         },
 
         {
             text: <h3 className="no3">BLUE</h3>,
             options: [
-                { id: 0, text: <p className="q1">GREEN</p>, isCorrect: true },
-                { id: 1, text: <p className="q2">YELLOW</p>, isCorrect: false },
-                { id: 2, text: <p className="q3">RED</p>, isCorrect: false },
-                { id: 3, text: <p className="q4">BLUE</p>, isCorrect: false },
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: true },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no4">GREEN</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: true },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+        {
+            text: <h3 className="no5">RED</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: true },
+            ],
+        },
+
+        {
+            text: <h3 className="no6">YELLOW</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: true },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no7">BLUE</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: true },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no8">GREEN</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: true },
+            ],
+        },
+        {
+            text: <h3 className="no9">RED</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: true },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no10">YELLOW</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: true },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
             ],
         },
 
