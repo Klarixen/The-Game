@@ -1,13 +1,13 @@
 import Homepage from "./components/pages/homepage"
 import AnswerButtons from "./components/AnswerButtons"
-import Words from "./components/Words"
-
+import Answers from "./components/Answers";
 
 function App() {
   return (
     <div>
       <Homepage />
-      <AnswerButtons />
+      <Answers />
+
 
 
     </div>

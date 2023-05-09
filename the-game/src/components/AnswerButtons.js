@@ -16,7 +16,7 @@ const AnswerButton = () => {
     return (
         <>
             <div className="back-container">
-
+                <Words />
                 <div className="btn-container-1">
                     <button style={{ backgroundColor: Palette[0].code }} onClick={clickMe} className="answer-btn">
                         Red
