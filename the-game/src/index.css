@@ -5,3 +5,11 @@ body {
 .start-btn {
     
 }
+
+.score {
+    margin: 0 auto; 
+    background-color: pink;
+    padding: 16px;
+    color: white;
+    
+}
