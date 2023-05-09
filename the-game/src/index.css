@@ -1,11 +1,14 @@
 body {
     color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .start-btn {
     color:#e8eaf4;
     background-color: #4c38e2;
-    width: 90px;
+    font-size: large;
+    font-weight: 700;
+    width: 150px;
     height: 60px;
     margin: 15px;
     border-radius: 15px;
@@ -15,6 +18,18 @@ body {
     -moz-box-shadow: -3px 3px 12px -1px rgba(63,43,49,0.61);
 
 }
+.start-btn:hover {
+    background: rgb(247,16,16);
+    background: linear-gradient(90deg, rgba(247,16,16,1) 0%, rgba(32,251,25,1) 36%, rgba(29,85,253,1) 67%, rgba(238,252,69,1) 94%);
+    cursor: pointer;
+
+}
+
+.start-btn:active {
+    width: 170px;
+    height: 70px;
+}
+
 
 .container {
     display: flex;
@@ -38,7 +53,6 @@ body {
 }
 .login-heading {
     color:#f7e5eb;
-    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -52,7 +66,6 @@ border-radius: 10px;
 }
 
 input::placeholder {
-    font-family: 'Montserrat', sans-serif;
     font-size:medium;
 }
 .reg-btn {
@@ -78,4 +91,32 @@ input::placeholder {
     box-shadow: none;
     background-color: #cc859c;
     cursor: pointer;
+}
+.home_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    border: 15px solid #4c38e2;
+    border-radius: 20px;
+
+}
+.start-btn_container {
+
+}
+
+.score {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border: solid #cd6587;
+    width: 50%;
+    border-radius: 30px;
+    background-color: #c13e69;
+
 }
