@@ -107,6 +107,56 @@ const Answers = () => {
             ],
         },
 
+        {
+            text: <h3 className="no11">GREEN</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: true },
+            ],
+        },
+
+        {
+            text: <h3 className="no12">BLUE</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: true },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no13">RED</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: true },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: false },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no14">GREEN</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: true },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
+        {
+            text: <h3 className="no15">YELLOW</h3>,
+            options: [
+                { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
+                { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
+                { id: 2, text: <button className="q3">RED</button>, isCorrect: true },
+                { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
+            ],
+        },
+
     ];
 
 
