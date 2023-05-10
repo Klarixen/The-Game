@@ -1,6 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&display=swap');
+
 body {
+    display: flex;
+    justify-content: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
+AnswerButtons
+
+}
+
+.back-container {
+    width: 600px;
+    height: 600px;
+    background-color: #DBDFEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+
+
+
+}
+
+.btn-container-1 {
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+
+}
+
+.btn-container-2 {
+    margin-bottom: 20px;
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+
+}
+
+
+
+.answer-btn {
+    width: 250px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: #8294C4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+
+}
+
+.answer-btn:hover {
+    opacity: 0.6;
+}
+
+.word {
+    color: red;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.question-card {
+
+    background-color: #EEEEEE;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 800px;
+    height: 400px;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+.no1 {
+    color: #ED2B2A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no2 {
+    color: #F7DB6A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no3 {
+    color: #609966;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no4 {
+    color: #609966;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no5 {
+    color: #3DB2FF;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no6 {
+    color: #F7DB6A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no7 {
+    color: #ED2B2A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no8 {
+    color: #3DB2FF;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no9 {
+    color: #ED2B2A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no10 {
+    color: #609966;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.no11 {
+    color: #3DB2FF;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.no12 {
+    color: #F7DB6A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.no13 {
+    color: #609966;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.no14 {
+    color: #ED2B2A;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.no15 {
+    color: #3DB2FF;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.q1:hover {
+    opacity: 0.6;
+}
+
+.q2:hover {
+    opacity: 0.6;
+}
+
+.q3:hover {
+    opacity: 0.6;
+}
+
+.q4:hover {
+    opacity: 0.6;
+}
+
+
+
+.q1 {
+    width: 80%;
+    background-color: #609966;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.q2 {
+    width: 80%;
+    background-color: #F7DB6A;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.q3 {
+    width: 80%;
+    background-color: #ED2B2A;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.q4 {
+    width: 80%;
+    background-color: #3DB2FF;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+
 }
 
 .start-btn {
@@ -119,4 +390,5 @@ input::placeholder {
     border-radius: 30px;
     background-color: #c13e69;
 
+main
 }
