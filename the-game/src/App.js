@@ -1,12 +1,11 @@
 import Homepage from "./components/pages/homepage"
-import AnswerButtons from "./components/AnswerButtons"
-import Answers from "./components/Answers";
+import AnswerButtons from "./components/AnswerButtons";
 
 function App() {
   return (
     <div>
       <Homepage />
-      <Answers />
+      <AnswerButtons />
 
 
 
