@@ -8,6 +8,10 @@ const [password, setPassword] = useState("");
 
 const navigate = useNavigate();
 
+const navigateRegister = () => {
+    navigate("/register");
+};
+
 const checkUser = (users) => {
     const user = users.find(
         (user) => user.email === email && user.password === password);
@@ -40,6 +44,7 @@ const handleSubmit = async (e) => {
         alert("Account is not found. Please registrate new user.")
     }
 
+    
 setEmail("");
 setPassword("");
 }
@@ -65,6 +70,10 @@ setPassword("");
         </label>
     <button className="reg-btn" type="submit" onClick={handleSubmit}>
         <p>Log in</p>
+    </button>
+    <p>If you don't have an account, don't worry! You can create a new one in few seconds!</p>
+    <button className="reg-btn" type="register" onClick={navigateRegister} >
+        <p>Register now!</p>
     </button>
     </form>
 </div>
