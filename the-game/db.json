@@ -11,6 +11,30 @@
       "email": "Alleriasmi@gmail.com",
       "password": "654edswf",
       "id": 2
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "username": "Check",
+      "email": "check@gmail.com",
+      "password": "test",
+      "id": 4
+    },
+    {
+      "username": "Test1",
+      "email": "test1@gmail.com",
+      "password": "test1",
+      "id": 5
+    },
+    {
+      "username": "testagain",
+      "email": "testagain@gmail.com",
+      "password": "testing",
+      "id": 6
     }
   ],
   "comments": [

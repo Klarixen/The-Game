@@ -1,10 +1,13 @@
 import {useState} from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 const [email, setEmail] = useState("");
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
+
+const navigate = useNavigate();
 
 const checkEmail = (users) => {
     const user = users.find((user) => user.email === email);
@@ -22,6 +25,7 @@ const handleSubmit = async (e) => {
     } else {
         const user = {username, email, password};
         axios.post("/users", user).then(alert("User created!"));
+        navigate("/");
     }
 
 };
@@ -35,10 +39,10 @@ const handleSubmit = async (e) => {
                         <input type="text" placeholder="Name" value={username} 
                         onChange={(e) => setUsername(e.target.value)} /></label>
                     <label>
-                        <input type="text" placeholder="Email" value={email} 
+                        <input type="email" placeholder="Email" value={email} 
                         onChange={(e) => setEmail(e.target.value)}/></label>
                     <label>
-                        <input type="text" placeholder="Password" value={password} 
+                        <input type="password" placeholder="Password" value={password} 
                         onChange={(e) => setPassword(e.target.value)}/></label>
                     <button className="reg-btn" type="submit" onClick={handleSubmit}>
                         <p>Register</p>
