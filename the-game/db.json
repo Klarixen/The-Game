@@ -11,6 +11,12 @@
       "email": "Alleriasmi@gmail.com",
       "password": "654edswf",
       "id": 2
+    },
+    {
+      "username": "vanessa",
+      "email": "vanessa.c.s@live.se",
+      "password": "mamita",
+      "id": 3
     }
   ],
   "comments": [

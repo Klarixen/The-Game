@@ -5,6 +5,7 @@ import Login from "./components/pages/login";
 import Homepage from "./components/pages/homepage";
 import Resultpage from "./components/pages/Resultpage";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,8 +16,8 @@ function App() {
       <Route path="/homepage" element={<Homepage />} />
     </Routes>
     <Resultpage></Resultpage> 
-
     </BrowserRouter>
   )
-  }
+  
+}
 export default App;
