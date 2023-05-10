@@ -5,8 +5,6 @@ body {
     justify-content: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
-AnswerButtons
-
 }
 
 .back-container {
@@ -374,9 +372,9 @@ input::placeholder {
     border-radius: 20px;
 
 }
-.start-btn_container {
+/*.start-btn_container {
 
-}
+}*/
 
 .score {
 
@@ -389,6 +387,4 @@ input::placeholder {
     width: 50%;
     border-radius: 30px;
     background-color: #c13e69;
-
-main
 }
