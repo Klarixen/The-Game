@@ -393,7 +393,7 @@ input::placeholder {
 */
 
 .timer-container {
-    background-color: skyblue;
+    background-color: #cd6587;
     width: 400px;
     height: 200px;
     border-radius: 30px;
@@ -402,4 +402,22 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
 
+}
+
+.rightanswer {
+    border: solid 2px green;
+}
+
+.restart {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 1px;
+    width: 100px;
+    height: 30px;
+    background-color: #DBDFEA;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.restart:hover {
+    opacity: 0.6;
 }

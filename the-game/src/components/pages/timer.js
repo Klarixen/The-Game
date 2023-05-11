@@ -22,6 +22,12 @@ const Timer = () => {
 
     });
 
+    const restart = () => {
+        setMinutes(0);
+        setSeconds(0);
+
+    }
+
 
     return (
 
@@ -30,9 +36,14 @@ const Timer = () => {
                 <div className="timer-container">
                     <h1>Timer</h1>
                     <h2> {minutes}:{seconds} </h2>
+                    <div className="btns-container">
+                        <button className="restart" onClick={restart}>Restart</button>
+
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </div >
     )
 };
 
