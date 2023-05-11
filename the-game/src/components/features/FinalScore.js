@@ -1,21 +1,33 @@
 //Final score
 //
+import React, {useState} from "react";
+
 
 const FinalScore = () => {
-   // const [showFinalResult, set FinalResult] = useState(true);
+  const [showScore, setScore] = useState(false);
+  
     
     return (
-        //{showFinalResult ? (
-        <div className="score">
-            <h1>Your Final Score</h1>
-            <h2>
-                1 out of 15 correct
-            </h2>
+       <div>
+         {showScore ? (
+            <div className="score-board">
+                <h1>
+                    Congratulations!
+                </h1>
+                <h2>
+                Your Final Score is:
+                </h2>
+                <h3>
+                    1 out of 15 correct
+                </h3>
+          
+            </div>
+             ) : (
+            //show the rest of the questions (Tanya's code)
+             )}
         </div>
-      //  ) : (
-//use more questions
-       
-   // )}
+     
+
    
     );
 }

@@ -11,7 +11,7 @@ const Resultpage = () => {
         <div>
         <FinalScore></FinalScore>
         <Startbtn>Restart game</Startbtn>
-        <Countdown></Countdown>
+        //connect the restart <Countdown></Countdown> to the restart game
         </div>
 
     )
