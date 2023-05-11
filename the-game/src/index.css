@@ -384,15 +384,16 @@ input::placeholder {
 
 }
 
-.timer {
+/*.timer {
     background-color: skyblue;
     display: flex;
     justify-content: center;
     width: 100%;
 }
+*/
 
 .timer-container {
-    background-color: white;
+    background-color: skyblue;
     width: 400px;
     height: 200px;
     border-radius: 30px;

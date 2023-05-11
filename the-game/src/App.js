@@ -10,8 +10,9 @@ import Timer from "./components/pages/timer";
 function App() {
   return (
     <BrowserRouter>
+
       <Routes>
-        <Timer />
+
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/homepage" element={<Homepage />} />

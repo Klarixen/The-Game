@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Timer from "./pages/timer";
+
 
 const Answers = () => {
     const [colorWords, setColorWords] = useState(0);
@@ -164,6 +166,7 @@ const Answers = () => {
 
     return (
         <>
+            <Timer />
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
                 <ul>
