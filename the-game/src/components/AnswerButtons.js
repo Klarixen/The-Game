@@ -1,10 +1,19 @@
 import { useState } from "react";
+import Timer from "./pages/timer";
+
 
 const Answers = () => {
     const [colorWords, setColorWords] = useState(0);
+    const [check, setCheck] = useState(false);
     const optionClicked = (isCorrect) => {
-        if (isCorrect);
-        setColorWords(colorWords + 1);
+        setCheck(true)
+        setTimeout(() => {
+            console.log(questions[colorWords].options)
+            if (isCorrect);
+            setColorWords(colorWords + 1);
+
+        }, "1000")
+        setCheck(false);
     }
 
 
@@ -15,7 +24,7 @@ const Answers = () => {
             options: [
                 { id: 0, text: <button className="q1">GREEN</button>, isCorrect: false },
                 { id: 1, text: <button className="q2">YELLOW</button>, isCorrect: false },
-                { id: 2, text: <button className="q3">RED</button>, isCorrect: true },
+                { id: 2, text: <button className={`q3 ${check && "rightanswer"}`}>RED</button>, isCorrect: true },
                 { id: 3, text: <button className="q4">BLUE</button>, isCorrect: false },
             ],
         },
@@ -164,6 +173,7 @@ const Answers = () => {
 
     return (
         <>
+            <Timer />
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
                 <ul>
