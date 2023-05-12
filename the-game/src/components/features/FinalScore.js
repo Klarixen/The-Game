@@ -4,18 +4,29 @@ import React, {useState} from "react";
 
 
 const FinalScore = () => {
-  const [showScore, setScore] = useState(false);
-  
+  const [showScoreBoard, setScoreBoard] = useState(false);
+
+  const optionClicked = (isCorrect) => {
+        if (isCorrect) {
+            setColorWords(colorWords + 1);}
+
+        if (colorWords + 1 < questions.length) {
+            setColorWords(colorWords + 1);
+        } else {
+            setScoreBoard()
+    }
+
+
     
     return (
        <div>
-         {showScore ? (
+         {showScoreBoard ? (
             <div className="score-board">
                 <h1>
                     Congratulations!
                 </h1>
                 <h2>
-                Your Final Score is:
+                Your Final Score is: {showFinalScore}
                 </h2>
                 <h3>
                     1 out of 15 correct
