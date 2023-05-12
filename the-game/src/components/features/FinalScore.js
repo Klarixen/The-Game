@@ -5,6 +5,8 @@ import React, {useState} from "react";
 
 const FinalScore = () => {
   const [showScoreBoard, setScoreBoard] = useState(false);
+  const [score, setScore] = useState(0);
+  //integrate it in the timer that Tanya has created
 
   const optionClicked = (isCorrect) => {
         if (isCorrect) {
@@ -29,8 +31,11 @@ const FinalScore = () => {
                 Your Final Score is: {showFinalScore}
                 </h2>
                 <h3>
-                    1 out of 15 correct
+                    {score} out of {questions.length} correct - ({(score/questions.length) * 100}%)
                 </h3>
+                <button onClick={() => restartGame()}>Restart game</button>
+                <div>//how to connect this button to the timer </div>
+                
           
             </div>
              ) : (
