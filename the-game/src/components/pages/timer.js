@@ -28,7 +28,7 @@ const Timer = ({ setCurrentTime}) => {
         setSeconds(0);
 
     }
-
+     
 
     return (
 

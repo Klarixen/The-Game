@@ -203,11 +203,11 @@ const Answers = () => {
     ) : (
         <div className="timer">
             <div className="container">
-                <div className="timer-container">
+                <div className="scoreboard-container">
                 <h1>Congratulations</h1>
                 <h2>
                     Your final score is {score} points out of 15 in {" "} 
-                    {currentTime.minutes} minutes and
+                    {currentTime.minutes > 0 && `${currentTime.minutes} minutes and `}
                     {currentTime.seconds} seconds
                 </h2>
                 <h2> 
