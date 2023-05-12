@@ -411,13 +411,14 @@ input::placeholder {
 .restart {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 1px;
-    width: 100px;
-    height: 30px;
+    width: 6rem;
+    height: 3rem;
     background-color: #DBDFEA;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 12rem;
 }
 
 .restart:hover {
     opacity: 0.6;
+    cursor: pointer;
 }

@@ -5,6 +5,12 @@ import Timer from "./pages/timer";
 const Answers = () => {
     const [colorWords, setColorWords] = useState(0);
     const [check, setCheck] = useState(false);
+    const [score, setScore] = useState(0);
+    const [currentTime, setCurrentTime] = useState({
+        minutes: 0,
+        seconds: 0,
+    });
+
     const optionClicked = (isCorrect) => {
         setCheck(true)
         setTimeout(() => {
@@ -14,9 +20,14 @@ const Answers = () => {
 
         }, "1000")
         setCheck(false);
-    }
+    };
 
-
+    const reset = () => {
+        setColorWords(0);
+        setCheck(false);
+        setScore(0);
+        setCurrentTime({ minutes: 0, seconds: 0 });
+    };
 
     const questions = [
         {
@@ -169,11 +180,9 @@ const Answers = () => {
     ];
 
 
-
-
-    return (
+    return colorWords < questions.length - 1 ? (
         <>
-            <Timer />
+            <Timer setCurrentTime={setCurrentTime} />
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
                 <ul>
@@ -189,17 +198,25 @@ const Answers = () => {
                     })}
 
                 </ul>
-
-
-
-
-
-
             </div>
-
-
         </>
-
+    ) : (
+        <div className="timer">
+            <div className="container">
+                <div className="timer-container">
+                <h1>Congratulations</h1>
+                <h2>
+                    Your final score is {score} points out of 15 in {" "} 
+                    {currentTime.minutes} minutes and
+                    {currentTime.seconds} seconds
+                </h2>
+                <h2> 
+                    That is {(score/questions.length) * 100}% correct
+                </h2>
+                <button className="restart" onClick= {() => reset()}>Restart game</button>  
+                </div>      
+                </div>
+            </div>
     )
 };
 
