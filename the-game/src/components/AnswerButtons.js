@@ -196,7 +196,7 @@ const Answers = () => {
             <Timer setCurrentTime={setCurrentTime} />
             <div className="current-score">
                 <h2>Current Score: {score}</h2>
-                <h3>Click on the color of the WORD:</h3>
+                <h3>Click on the actual color of the WORD:</h3>
             </div>
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
