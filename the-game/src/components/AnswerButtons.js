@@ -196,7 +196,7 @@ const Answers = () => {
             <Timer setCurrentTime={setCurrentTime} />
             <div className="current-score">
                 <h2>Current Score: {score}</h2>
-                <h3>Click on the right color of the word:</h3>
+                <h3>Click on the color of the WORD:</h3>
             </div>
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
@@ -221,8 +221,9 @@ const Answers = () => {
                 <div className="scoreboard-container">
                 <h1>Congratulations!</h1>
                 <h2>
-                    Your final score is {score} points out of 15 in {" "} 
-                    {currentTime.minutes > 0 && `${currentTime.minutes} minute and `}
+                    Your final score is {score}/15 points in {" "} 
+                    {currentTime.minutes === 1 && `${currentTime.minutes} minute and `}
+                    {currentTime.minutes > 1 && `${currentTime.minutes} minutes and `}
                     {currentTime.seconds} seconds
                 </h2>
                 <h2> 
