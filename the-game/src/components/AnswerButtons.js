@@ -193,10 +193,11 @@ const Answers = () => {
 
     return colorWords < questions.length - 1 ? (
         <>
+            <Timer setCurrentTime={setCurrentTime} />
             <div className="current-score">
                 <h2>Current Score: {score}</h2>
+                <h3>Click on the right color of the word:</h3>
             </div>
-            <Timer setCurrentTime={setCurrentTime} />
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
                 <ul>
@@ -218,14 +219,14 @@ const Answers = () => {
         <div className="timer">
             <div className="container">
                 <div className="scoreboard-container">
-                <h1>Congratulations</h1>
+                <h1>Congratulations!</h1>
                 <h2>
                     Your final score is {score} points out of 15 in {" "} 
-                    {currentTime.minutes > 0 && `${currentTime.minutes} minutes and `}
+                    {currentTime.minutes > 0 && `${currentTime.minutes} minute and `}
                     {currentTime.seconds} seconds
                 </h2>
                 <h2> 
-                    That is {(score/questions.length) * 100}% correct
+                    That is {Math.floor((score/questions.length) * 100)}% correct
                 </h2>
                 <button className="restart" onClick= {() => reset()}>Restart game</button>  
                 </div>      

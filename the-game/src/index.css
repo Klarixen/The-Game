@@ -396,14 +396,18 @@ input::placeholder {
 */
 .current-score {
     background-color: #cd6587;
+    color: white;
     width: 400px;
-    height: 4rem;
+    height: 6rem;
     border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 
 }
 
@@ -442,8 +446,8 @@ input::placeholder {
 .restart {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 1px;
-    width: 10rem;
-    height: 3rem;
+    width: 7rem;
+    height: 2rem;
     background-color: #DBDFEA;
     border-style: none;
     border-radius: 12rem;
