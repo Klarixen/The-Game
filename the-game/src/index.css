@@ -394,12 +394,24 @@ input::placeholder {
     width: 100%;
 }
 */
+.current-score {
+    background-color: #cd6587;
+    width: 400px;
+    height: 4rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 .timer-container {
     background-color: #cd6587;
     width: 400px;
-    height: 200px;
-    border-radius: 2rem;
+    height: 8rem;
+    border-radius: 5rem;
     margin-top: 2rem;
     display: flex;
     justify-content: center;

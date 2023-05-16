@@ -11,15 +11,22 @@ const Answers = () => {
         seconds: 0,
     });
 
+
+    //helper functions
+
     const optionClicked = (isCorrect) => {
         setCheck(true)
         setTimeout(() => {
-            console.log(questions[colorWords].options)
             if (isCorrect);
             setColorWords(colorWords + 1);
 
         }, "1000")
         setCheck(false);
+
+        if( isCorrect) {
+            setScore(score +1);
+        }
+
     };
 
     const reset = () => {
@@ -180,8 +187,15 @@ const Answers = () => {
     ];
 
 
+    
+
+
+
     return colorWords < questions.length - 1 ? (
         <>
+            <div className="current-score">
+                <h2>Current Score: {score}</h2>
+            </div>
             <Timer setCurrentTime={setCurrentTime} />
             <div className="question-card">
                 <h3 className="no1">{questions[colorWords].text}</h3>
