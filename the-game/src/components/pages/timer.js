@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 
-const Timer = ({ setCurrentTime}) => {
+const Timer = ({ setCurrentTime }) => {
     const [seconds, setSeconds] = useState(0);
     const [minutes, setMinutes] = useState(0);
 
@@ -28,18 +28,14 @@ const Timer = ({ setCurrentTime}) => {
         setSeconds(0);
 
     }
-     
+
 
     return (
 
         <div className="timer">
             <div className="container">
                 <div className="timer-container">
-                    <h2> {minutes}:{seconds} </h2>
-                    <div className="btns-container">
-                        <button className="restart" onClick={restart}>Restart</button>
-
-                    </div>
+                    <h2> {minutes < 10 ? "0" + minutes : minutes}:{seconds} </h2>
 
                 </div>
             </div>
