@@ -35,7 +35,7 @@ const Timer = ({ setCurrentTime }) => {
         <div className="timer">
             <div className="container">
                 <div className="timer-container">
-                    <h2> {minutes}:{seconds} </h2>
+                    <h2> {minutes < 10 ? "0" + minutes : minutes}:{seconds} </h2>
 
                 </div>
             </div>
