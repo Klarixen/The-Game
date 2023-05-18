@@ -397,7 +397,7 @@ input::placeholder {
     align-items: center;
     flex-direction: column;
     margin: 20px;
-    padding: 15px;
+    padding: 5rem;
     border: 15px solid #c13e69;
     border-radius: 20px;
 
@@ -483,7 +483,6 @@ input::placeholder {
     padding: 1rem;
     color: white;
     background-color: #c13e69;
-    
     height: 4rem;
     margin: 15px;
     border-radius: 12rem;
