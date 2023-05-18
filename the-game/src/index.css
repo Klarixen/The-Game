@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&display=swap');
+/*#b2a4ff,
+    #ffb4b4,
+    #ffdeb4,
+    #fdf7c3,*/
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #C1AFE0,
+        #BBCFF2,
+        #C8EFB3,
+        #FFF7BA,
+        #F9D39D,
+        #FCB6B6
+    );
+}
 
 body {
     display: flex;
+    min-height: 100vh;
     justify-content: center;
+    align-items: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
+background-image: var(--gradient);
+background-size: 300%;
+animation: bg-animation 8s infinite alternate;
+}
 
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
 
 .back-container {
@@ -18,14 +42,11 @@ body {
     justify-content: flex-end;
     gap: 30px;
 
-
-
 }
 
 .btn-container-1 {
     width: 600px;
     height: 100px;
-
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -37,12 +58,9 @@ body {
     margin-bottom: 20px;
     width: 600px;
     height: 100px;
-
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-
-
 }
 
 
@@ -306,18 +324,22 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    width: 50vh;
+    text-align: center;
     border: solid #cd6587;
-    width: 50%;
+    color: #e8eaf4;
+    padding: 5px;
     border-radius: 30px;
     background-color: #c13e69;
     box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
     -webkit-box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
     -moz-box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
-    ;
-
 }
 
+.create {
+    font-size: 25px;
+    font-weight: 500;
+}
 .login-heading {
     color: #f7e5eb;
 
@@ -368,7 +390,7 @@ input::placeholder {
     flex-direction: column;
     margin: 20px;
     padding: 15px;
-    border: 15px solid #4c38e2;
+    border: 15px solid #c13e69;
     border-radius: 20px;
 
 }
