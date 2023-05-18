@@ -14,7 +14,11 @@
         #FCB6B6
     );
 }
-
+.gameInterface {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 body {
     display: flex;
     min-height: 100vh;
@@ -88,16 +92,16 @@ animation: bg-animation 8s infinite alternate;
 }
 
 .question-card {
-
     background-color: #EEEEEE;
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     max-width: 800px;
+    min-width: 80%;
     height: 400px;
     border-radius: 2rem;
-    padding: 2rem;
-    margin-top: 2rem;
-
+    padding: 1rem;
+    margin: 1rem;
+    
 }
 
 ul {
@@ -316,7 +320,7 @@ ul {
 .container {
     display: flex;
     justify-content: center;
-
+    
 }
 
 .form-container {
@@ -436,9 +440,10 @@ input::placeholder {
 .timer-container {
     background-color: #cd6587;
     width: 400px;
-    height: 8rem;
+    height: 5rem;
+    color: white;
     border-radius: 5rem;
-    margin-top: 2rem;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -449,7 +454,7 @@ input::placeholder {
 .scoreboard-container {
     background-color: #cd6587;
     color: white;
-    width: 10rm;
+    width: 5rem;
     height: 20rem;
     padding: 2rem;
     border-radius: 30px;
