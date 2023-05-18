@@ -310,7 +310,7 @@ ul {
     background: rgb(247, 16, 16);
     background: linear-gradient(90deg, rgba(247, 16, 16, 1) 0%, rgba(32, 251, 25, 1) 36%, rgba(29, 85, 253, 1) 67%, rgba(238, 252, 69, 1) 94%);
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
 
 }
 
@@ -479,12 +479,12 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
+    width: 12rem;
     padding: 1rem;
     color: white;
     background-color: #c13e69;
-    width: 40%;
-    height: 50px;
+    
+    height: 4rem;
     margin: 15px;
     border-radius: 12rem;
     font-family: 'Montserrat', sans-serif;
