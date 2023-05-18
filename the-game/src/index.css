@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&display=swap');
 
 body {
-    display: flex;
-    justify-content: center;
+
     color: black;
     font-family: 'Montserrat', sans-serif;
 
@@ -267,8 +266,8 @@ ul {
 }
 
 .start-btn {
-    color: #e8eaf4;
-    background-color: #4c38e2;
+    color:#e8eaf4;
+    background-color: #c13e69;
     font-size: large;
     font-weight: 700;
     width: 150px;
@@ -368,7 +367,7 @@ input::placeholder {
     flex-direction: column;
     margin: 20px;
     padding: 15px;
-    border: 15px solid #4c38e2;
+    border: 15px solid #c13e69;
     border-radius: 20px;
 
 }
