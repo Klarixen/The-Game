@@ -71,7 +71,7 @@ setPassword("");
     <button className="reg-btn" type="submit" onClick={handleSubmit}>
         <p>Log in</p>
     </button>
-    <p>If you don't have an account, don't worry! You can create a new one in few seconds!</p>
+    <p className="create">If you don't have an account, don't worry! You can create a new one in few seconds!</p>
     <button className="reg-btn" type="register" onClick={navigateRegister} >
         <p>Register now!</p>
     </button>

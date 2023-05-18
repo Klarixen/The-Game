@@ -193,7 +193,7 @@ const Answers = () => {
 
     return colorWords < questions.length - 1 ? (
         <>
-            <Timer setCurrentTime={setCurrentTime} />
+            <div className="gameInterface">
             <div className="current-score">
                 <h2>Current Score: {score}</h2>
                 <h3>Click on the actual color of the WORD:</h3>
@@ -213,6 +213,8 @@ const Answers = () => {
                     })}
 
                 </ul>
+                </div>
+                <Timer setCurrentTime={setCurrentTime} />
             </div>
         </>
     ) : (
@@ -230,8 +232,10 @@ const Answers = () => {
                     That is {Math.floor((score/questions.length) * 100)}% correct
                 </h2>
                 <button className="restart" onClick= {() => reset()}>Restart game</button>  
-                </div>      
+                </div> 
+                
                 </div>
+                
             </div>
     )
 };

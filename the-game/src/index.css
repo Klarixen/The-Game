@@ -1,10 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&display=swap');
-
+/*#b2a4ff,
+    #ffb4b4,
+    #ffdeb4,
+    #fdf7c3,*/
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #C1AFE0,
+        #BBCFF2,
+        #C8EFB3,
+        #FFF7BA,
+        #F9D39D,
+        #FCB6B6
+    );
+}
+.gameInterface {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 body {
-
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
+background-image: var(--gradient);
+background-size: 300%;
+animation: bg-animation 8s infinite alternate;
+}
 
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
 }
 
 .back-container {
@@ -17,14 +46,11 @@ body {
     justify-content: flex-end;
     gap: 30px;
 
-
-
 }
 
 .btn-container-1 {
     width: 600px;
     height: 100px;
-
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -36,12 +62,9 @@ body {
     margin-bottom: 20px;
     width: 600px;
     height: 100px;
-
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-
-
 }
 
 
@@ -69,16 +92,16 @@ body {
 }
 
 .question-card {
-
     background-color: #EEEEEE;
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     max-width: 800px;
+    min-width: 80%;
     height: 400px;
     border-radius: 2rem;
-    padding: 2rem;
-    margin-top: 2rem;
-
+    padding: 1rem;
+    margin: 1rem;
+    
 }
 
 ul {
@@ -297,7 +320,7 @@ ul {
 .container {
     display: flex;
     justify-content: center;
-
+    
 }
 
 .form-container {
@@ -305,18 +328,22 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    width: 50vh;
+    text-align: center;
     border: solid #cd6587;
-    width: 50%;
+    color: #e8eaf4;
+    padding: 5px;
     border-radius: 30px;
     background-color: #c13e69;
     box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
     -webkit-box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
     -moz-box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
-    ;
-
 }
 
+.create {
+    font-size: 25px;
+    font-weight: 500;
+}
 .login-heading {
     color: #f7e5eb;
 
@@ -413,9 +440,10 @@ input::placeholder {
 .timer-container {
     background-color: #cd6587;
     width: 400px;
-    height: 8rem;
+    height: 5rem;
+    color: white;
     border-radius: 5rem;
-    margin-top: 2rem;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -426,7 +454,7 @@ input::placeholder {
 .scoreboard-container {
     background-color: #cd6587;
     color: white;
-    width: 10rm;
+    width: 5rem;
     height: 20rem;
     padding: 2rem;
     border-radius: 30px;
