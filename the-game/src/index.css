@@ -296,18 +296,21 @@ ul {
     width: 150px;
     height: 60px;
     margin: 15px;
-    border-radius: 15px;
+    border-radius: 12rem;
     font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 600;
     box-shadow: -3px 3px 12px -1px rgba(63, 43, 49, 0.61);
     -webkit-box-shadow: -3px 3px 12px -1px rgba(63, 43, 49, 0.61);
     -moz-box-shadow: -3px 3px 12px -1px rgba(63, 43, 49, 0.61);
 
 }
 
-.start-btn:hover {
+.start-btn:hover, .restart:hover {
     background: rgb(247, 16, 16);
     background: linear-gradient(90deg, rgba(247, 16, 16, 1) 0%, rgba(32, 251, 25, 1) 36%, rgba(29, 85, 253, 1) 67%, rgba(238, 252, 69, 1) 94%);
     cursor: pointer;
+    font-size: 22px;
 
 }
 
@@ -371,7 +374,7 @@ input::placeholder {
     width: 40%;
     height: 50px;
     margin: 15px;
-    border-radius: 15px;
+    border-radius: 12rem;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
     font-weight: 600;
@@ -385,6 +388,7 @@ input::placeholder {
     box-shadow: none;
     background-color: #cc859c;
     cursor: pointer;
+    font-size: 22px;
 }
 
 .home_container {
@@ -452,8 +456,7 @@ input::placeholder {
 }
 
 .scoreboard-container {
-    background-color: #cd6587;
-
+    border: solid #cd6587;
     color: white;
     width: 20rm;
     height: 20rem;
@@ -469,7 +472,6 @@ input::placeholder {
     -webkit-box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
     -moz-box-shadow: 1px -10px 84px 29px rgba(205, 101, 135, 0.67);
     
-
 }
 
 .congrats {
@@ -481,18 +483,22 @@ input::placeholder {
 }
 
 .restart {
-    font-family: 'DM Sans', sans-serif;
-    letter-spacing: 1px;
-    width: 8rem;
-    height: 2rem;
-    background-color: #DBDFEA;
-    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    padding: 1rem;
+    color: #f7e5eb;
+    background-color: #cd6587;
+    width: 40%;
+    height: 50px;
+    margin: 15px;
     border-radius: 12rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    box-shadow: -3px 3px 12px -1px rgba(63, 43, 49, 0.61);
+    -webkit-box-shadow: -3px 3px 12px -1px rgba(63, 43, 49, 0.61);
+    -moz-box-shadow: -3px 3px 12px -1px rgba(63, 43, 49, 0.61);
 }
 
-.restart:hover {
-    
-    cursor: pointer;
-    background-color: turquoise;
-    color: white;
-}
